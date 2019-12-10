@@ -1,0 +1,28 @@
+textarea {
+	margin:0px 0px;
+	padding:5px;
+	min-height:16px;
+	line-height:16px;
+	width:96%;
+	display:block;
+	margin:0px auto;
+}
+
+#switchEnter {
+	text-align: right;
+}
+
+.submit {
+	padding: 0 !important;
+}
+
+.form {
+	padding: 0 0 0 0 !important;
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.chatbox {
+	position: absolute;
+	bottom: 0;
+}

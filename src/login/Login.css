@@ -1,0 +1,14 @@
+.login {
+  position: fixed !important;
+  top: 30%;
+  left: 45%;
+  z-index: 999;
+}
+
+.modal-footer {
+  padding: 0.5rem 0rem 0.5rem 1.5rem;
+}
+
+/* .modal-dialog .modal-content .modal-header .button.close {
+    padding: .5rem 0.5rem;
+} */

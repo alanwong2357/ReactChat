@@ -1,0 +1,30 @@
+.sidebar {
+  background-color: rgb(37,55,88);
+  /* rgb(37,55,88) */
+  height: 92vh;
+  color: rgb(244,244,244);
+}
+
+.chatrooms {
+
+  margin: .2em 0 .2em 0;
+  padding: .3em 0 .4em .7em;
+  font-size: 22px;
+  cursor: pointer;
+  /* border-color: black; */
+  /* border-style: solid; */
+
+}
+
+.chatrooms:hover {
+  color: white;
+}
+
+.selectedChatroom {
+  /* background-color: rgb(13,33,70); */
+  background-color: rgb(23,87,125)
+}
+
+.not {
+  background-color: black;
+}
