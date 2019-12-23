@@ -3,7 +3,7 @@ import React from "react";
 import './ChatForm.css';
 
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -38,6 +38,7 @@ class ChatForm extends Component {
 		if(newRows !== oldRows) {
 			e.target.rows = Math.floor(newRows);
 		}
+
 
 		e.stopPropagation();
 	}

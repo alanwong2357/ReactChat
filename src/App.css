@@ -1,5 +1,21 @@
+html {
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.container {
+  max-width: 100% !important;
+  padding: 0 !important;
+/*  min-height: 100vh;
+  min-width: 100vh !important;
+  max-width: 100vh !important;
+  margin: 0 0 0 0 !important;
+  padding: 0 0 0 0 !important;*/
+}
+
 .App {
   text-align: center;
+  /*background-color: #282c34;*/
 }
 
 .App-logo {
@@ -10,7 +26,8 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
+  height: 8vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,4 +47,153 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/*.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+*/
+/*.App-header {
+  background-color: #262626;
+  overflow: visible;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+*/
+.Messages-list {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+  max-height: 81vh;
+  /*flex: 1;*/
+  /*flex-shrink: 1;*/
+  white-space: pre-wrap;
+  height: auto;
+}
+
+.Messages-message {
+  display: flex;
+  margin-top: 10px;
+  color: gray;
+  padding-bottom: .1em;
+}
+
+.Messages-message.currentMember {
+  /*justify-content: flex-end;*/
+  flex-direction: row-reverse;
+  text-align: right;
+  padding-bottom: .1em;
+}
+
+.Messages-message.currentMember > .Message-content > .text {
+  background-color: rgb(10, 132, 255);
+  color: white;
+}
+/*.Message-content {
+  display: inline-block;
+}*/
+
+/*.currentMember > .Message-content {
+  align-items: flex-end;
+}*/
+
+/*.Messages-message > .avatar {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px -10px;
+}*/
+
+.Message-content > .username {
+  display: block;
+  color: gray;
+  font-size: 14px;
+  padding-bottom: .3em;
+  text-align: left;
+}
+
+.Message-content > .text {
+  padding: .3em .8em .3em .8em;
+  max-width: 400px;
+  /*margin: 0;*/
+  border-radius: 12px;
+  background-color: rgb(228,228,228);
+  color: black;
+  display: inline-block;
+  border-radius: 1.15em;
+}
+
+
+/*.currentMember > .Message-content .text {
+  background-color: orangered;
+}*/
+
+
+
+/*form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}*/
+
+/*input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid orangered;
+  flex-grow: 1;
+}*/
+
+/*button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+}*/
+
+.footer {
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+}
+
+.element::-webkit-scrollbar {
+  width: 0 !important
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

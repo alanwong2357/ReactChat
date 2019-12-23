@@ -2,10 +2,6 @@ import { Component } from "react";
 import React from "react";
 
 class Messages extends Component {
-  // constructor(props) {
-  //   super(props);
-  // }
-
   componentDidUpdate() {
     this.scrollToBottom();
   }
@@ -16,7 +12,7 @@ class Messages extends Component {
 
 	render() {
 		const {messages} = this.props;
-    console.log(messages);
+    // console.log(messages);
 		return(
 			<ul className="Messages-list">
         {this.props.messages && messages.map(m => this.renderMessage(m))}

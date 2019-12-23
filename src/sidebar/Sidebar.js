@@ -20,13 +20,6 @@ class Sidebar extends Component {
 	handleChatroomChange = (e) => {
 		console.log(e.target.innerText.substring(1));
 		this.props.onChatroomChange(e.target.innerText.substring(1));
-
-
-		// <h2>{this.props.currentChatRoom !== chatroom.toString() ? 'chatroom' : 'not this'}</h2>
-
-		// <li className="chatrooms ({this.props.currentChatRoom == chatroom.toString() ? selectedChatroom : {}})" onClick={e => this.handleChatroomChange(e)} style= {{listStyleType: "none"}}>
-		// 	#{chatroom}
-		// </li>
 	}
 
 	render() {
